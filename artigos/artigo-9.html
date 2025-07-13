@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="bg-[#0B021D] text-white">
+<head>
+    <title>Git Commit | Sony Vegas</title>
+    <meta name="description" content="Como a lógica e a organização de um desenvolvedor podem transformar o fluxo de trabalho no audiovisual.">
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../imgs/favicon.ico">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/toolbar/prism-toolbar.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="lang-pt">
+    <header class="bg-[#0B021D] sticky top-0 z-50 shadow-md backdrop-blur-sm bg-opacity-70">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            
+            <a href="../index.html" class="text-2xl font-bold text-white tracking-wider">R.S</a>
+
+            <div class="hidden md:flex items-center">
+                <nav class="space-x-8">
+                    <a href="../index.html#sobre" class="text-gray-300 hover:text-purple-400 transition-colors">Sobre</a>
+                    <a href="../index.html#projetos" class="text-gray-300 hover:text-purple-400 transition-colors">Projetos</a>
+                    <a href="../videografia.html" class="text-gray-300 hover:text-purple-400 transition-colors">Videografia</a>
+                    <a href="../processo.html" class="text-gray-300 hover:text-purple-400 transition-colors">Processo</a>
+                    <a href="../index.html#contato" class="text-gray-300 hover:text-purple-400 transition-colors">Contato</a>
+                    <a href="../blog.html" class="text-gray-300 hover:text-purple-400 transition-colors">Blog</a>
+                </nav>
+
+                <button id="theme-toggle-button" class="ml-6 text-gray-300 hover:text-purple-400 transition-colors pl-8 border-l border-gray-700">
+                    <svg id="theme-icon-sun" class="w-6 h-6 hidden" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm-.707 7.072l.707-.707a1 1 0 10-1.414-1.414l-.707.707a1 1 0 001.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 100 2h1z" clip-rule="evenodd"></path></svg>
+                    <svg id="theme-icon-moon" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                </button>
+
+                <div id="language-switcher" class="relative ml-2 flex items-center bg-gray-800 bg-opacity-50 p-1 rounded-full">
+                    <div id="language-pill" class="absolute h-full bg-purple-600 rounded-full transition-all duration-300 ease-in-out"></div>
+
+                    <a href="artigo-9.html" class="lang-link px-3 py-1 text-sm font-medium transition-transform duration-200 hover:scale-110 relative z-10" data-lang="pt">PT</a>
+                    <a href="artigo-9-en.html" class="lang-link px-3 py-1 text-sm font-medium transition-transform duration-200 hover:scale-110 relative z-10" data-lang="en">EN</a>
+                </div>
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg id="icon-hamburger" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg id="icon-hamburger" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-[#100425]">
+            <a href="../index.html#sobre" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Sobre</a>
+            <a href="../index.html#projetos" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Projetos</a>
+            <a href="../videografia.html" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Videografia</a>
+            <a href="../processo.html" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Processo</a>
+            <a href="../index.html#contato" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Contato</a>
+            <a href="../blog.html" class="text-gray-300 hover:text-purple-400 transition-colors">Blog</a>
+        </div>
+    </header>
+    <main>
+        <div class="container mx-auto px-6 py-16 md:py-24 max-w-3xl">
+            <article class="prose prose-invert max-w-none prose-p:text-gray-300 prose-headings:text-white prose-a:text-purple-400 prose-strong:text-white">
+                
+                <h1>O que o Versionamento com Git me Ensinou sobre Salvar Projetos no Sony Vegas Pro</h1>
+                
+                <p class="text-sm text-gray-400">Publicado em 29 de Junho de 2025 • Leitura de 5 min</p>
+
+                <img src="../imgs/git.png" alt="Capa do artigo" class="rounded-lg shadow-lg">
+                
+                <p>
+                    Qual editor de vídeo nunca sentiu aquele frio na espinha? Aquele momento em que você faz uma grande alteração, não gosta, e ao tentar voltar atrás, percebe que o 'Ctrl+Z' não é mais suficiente. Ou pior: você salva seu projeto como Clipe_Final_AGORA_VAI_2.veg e acaba com uma dezena de arquivos confusos, sem saber qual é a versão correta.
+                </p>
+
+                <p>
+                    No mundo do desenvolvimento de software, esse problema foi resolvido há décadas com uma ferramenta chamada Git. O Git é um sistema de controle de versão que permite que programadores salvem 'fotografias' do seu trabalho em qualquer momento, com total segurança e organização. Vindo dessa área, percebi que a filosofia por trás do Git poderia transformar completamente a forma como eu organizo meus projetos no Sony Vegas.
+                </p>
+                
+                <p>
+                    Neste artigo, vou compartilhar como os conceitos de commit, branch e a mentalidade do versionamento me ajudaram a criar um fluxo de trabalho de edição mais seguro, organizado и à prova de desastres.
+                </p>
+
+                <h2>Seção 1: O git commit e o "Salvar Como..." Inteligente</h2>
+                <p>
+                    <strong>O que é git commit?</strong> Na programação, um git commit é mais do que um simples 'Salvar'. É um ponto de verificação permanente na história do projeto. Cada commit tem uma 'mensagem' que descreve exatamente o que foi alterado. Ex: 'Adicionei o botão de login'.
+                </p>
+                <p>
+                    Eu adotei essa filosofia. Em vez de salvar o projeto com nomes genéricos, eu uso o 'Salvar Como...' (Ctrl+Alt+S) em momentos chave e crio um novo arquivo com um nome que funciona como uma mensagem de commit. Por exemplo:
+                    <br><br>
+                    <code>MeuVideo_v1.0_CorteInicial.veg</code><br>
+                    <code>MeuVideo_v1.1_CorrecaoDeCorAplicada.veg</code><br>
+                    <code>MeuVideo_v1.2_TrilhaSonoraSincronizada.veg</code>
+                    <br><br>
+                    O resultado? Eu tenho um histórico claro e navegável do meu projeto. Se um cliente disser 'gostei mais da versão antes da correção de cor', eu não entro em pânico. Eu simplesmente abro o arquivo v1.1 e sei exatamente onde estou.
+                </p>
+
+                <h2>Seção 2: O git branch e a Edição Experimental Segura</h2>
+                <p>
+                   <strong>O que é git branch?</strong> No Git, quando queremos testar uma ideia nova e radical sem estragar a versão principal do nosso código, nós criamos um 'branch' – uma ramificação. É uma cópia segura do projeto onde podemos experimentar à vontade. Se a ideia funcionar, nós a 'juntamos' (merge) de volta ao projeto principal. Se não, simplesmente descartamos o branch sem nenhum dano."
+                </p>
+                <p>
+                    Eu faço o mesmo com edições experimentais. Digamos que a versão v1.2 do meu vídeo está estável, mas eu quero testar uma montagem completamente diferente para o refrão da música. Em vez de arriscar meu projeto principal, eu crio uma pasta chamada _experimentos/ e salvo uma nova versão lá dentro:
+                </p>
+
+                <ul>
+                    <li>_experimentos/MeuVideo_v1.3-teste-refrao-rapido.veg</li>
+                </ul>
+                <p> 
+                    Isso me dá total liberdade criativa. Posso ousar, testar cortes malucos, aplicar efeitos pesados, sabendo que meu projeto principal está seguro e intacto. É a rede de segurança definitiva para a criatividade.
+                </p>
+                
+                <h2>Conclusão: Mais que Organização, uma Filosofia</h2>
+
+                <p>
+                    Adotar a mentalidade do Git na edição de vídeo — usando 'Salvar Como...' como commits para marcar etapas importantes e pastas separadas como branches para experimentação — transformou meu fluxo de trabalho.
+                </p>
+                <p>
+                    Não se trata apenas de organizar arquivos. Trata-se de trazer uma filosofia de segurança, intenção e liberdade para o processo criativo. É saber que você pode sempre voltar atrás, que cada grande passo está documentado e que você tem um espaço seguro para errar e inovar. E essa tranquilidade, para qualquer criativo, não tem preço.
+                </p>
+            </article>
+        </div>
+    </main>
+
+    <script src="../js/script.js" defer></script>
+    <script src="artigos.js"></script>
+    <script src="../js/projects.js"></script> 
+    <script src="../js/articles.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#0B021D] text-white scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Rodrigo S. R - Developer & Video Editor</title>
+
+    <link rel="icon" type="image/png" href="imgs/favicon.png">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="./imgs/favicon.ico">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="[URL_COMPLETA_DO_SEU_SITE]">
+    <meta property="og:title" content="Rodrigo S. R - Audiovisual & Development Portfolio">
+    <meta property="og:description" content="Discover my projects in video editing, motion graphics, and front-end development.">
+    <meta property="og:image" content="[URL_COMPLETA_DA_IMAGEM_DE_CAPA]">
+    <meta property="twitter:card" content="summary_large_image">
+
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rodrigo Silva Ramos",
+        "url": "[URL_COMPLETA_DO_SEU_SITE]",
+        "image": "[URL_COMPLETA_DA_SUA_FOTO]",
+        "sameAs": [
+            "https://linkedin.com/in/rodrigo-silva-ramos-982693369/",
+            "https://github.com/WolfAllone",
+            "https://www.youtube.com/watch?v=27jgyrS_pek"
+        ],
+        "jobTitle": "Video Editor and Front-end Developer",
+        "description": "Career-transitioning professional, uniting development logic with audiovisual creativity to build high-impact video and web projects.",
+        "knowsAbout": ["Video Editing", "Motion Graphics", "Post-Production", "JavaScript", "HTML5", "CSS3", "Vegas Pro"]
+        }
+    </script>
+</head>
+<body class="lang-en">
+    <header class="bg-[#0B021D] sticky top-0 z-50 shadow-md backdrop-blur-sm bg-opacity-70">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            
+            <a href="index.html" class="text-2xl font-bold text-white tracking-wider">
+                <R class="S">R.S</R>
+            </a>
+            <div class="hidden md:flex items-center">
+                <nav class="space-x-8">
+                    <a href="index-en.html#sobre" class="text-gray-300 hover:text-purple-400 transition-colors">About</a>
+                    <a href="index-en.html#projetos" class="text-gray-300 hover:text-purple-400 transition-colors">Projects</a>
+                    <a href="videografia-en.html" class="text-gray-300 hover:text-purple-400 transition-colors">Videography</a>
+                    <a href="processo-en.html" class="text-gray-300 hover:text-purple-400 transition-colors">Process</a>
+                    <a href="index-en.html#contato" class="text-gray-300 hover:text-purple-400 transition-colors">Contact</a>
+                    <a href="blog.html" class="text-gray-300 hover:text-purple-400 transition-colors">Blog</a>
+                </nav>
+                
+                <button id="theme-toggle-button" class="ml-6 text-gray-300 hover:text-purple-400 transition-colors pl-8 border-l border-gray-700">
+                    <svg id="theme-icon-sun" class="w-6 h-6 hidden" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm-.707 7.072l.707-.707a1 1 0 10-1.414-1.414l-.707.707a1 1 0 001.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 100 2h1z" clip-rule="evenodd"></path></svg>
+                    <svg id="theme-icon-moon" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                </button>
+
+                <div id="language-switcher" class="relative flex items-center bg-gray-800 bg-opacity-50 p-1 rounded-full">
+                    <div id="language-pill" class="absolute h-full bg-purple-600 rounded-full transition-all duration-300 ease-in-out"></div>
+
+                    <a href="index.html" class="lang-link px-3 py-1 text-sm font-medium transition-transform duration-200 hover:scale-110 relative z-10" data-lang="pt">PT</a>
+                    <a href="index-en.html" class="lang-link px-3 py-1 text-sm font-medium transition-transform duration-200 hover:scale-110 relative z-10" data-lang="en">EN</a>
+                </div>
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg id="icon-hamburger" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-[#100425]">
+            <a href="index-en.html#sobre" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">About</a>
+            <a href="index-en.html#projetos" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Projecs</a>
+            <a href="videografia-en.html" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Videography</a>
+            <a href="processo-en.html" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Process</a>
+            <a href="index-en.html#contato" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Contact</a>
+            <a href="blog.html" class="text-gray-300 hover:text-purple-400 transition-colors">Blog</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="h-screen min-h-[600px] flex items-center justify-center text-center bg-cover bg-center relative hero-section">
+           
+            <canvas id="matrix-canvas" class="absolute top-0 left-0 w-full h-full z-0"></canvas>
+            <div data-aos="fade-up" class="relative z-10 p-6">
+            <h1 class="text-4xl md:text-6xl font-bold tracking-tight">Hello, I am <span class="text-purple-400">Rodrigo Silva Ramos</span>.</h1>
+            <p class="mt-4 text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">Front-end Developer | Passionate about creating intuitive and modern digital experiences.</p>
+
+                <div class="mt-8 flex justify-center gap-4">
+                    <a href="#projetos" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg transition-colors">
+                        See My Works
+                    </a>
+                    <a href="#contato" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-lg transition-colors">
+                        Talk to me
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="py-20">
+    <div class="container mx-auto px-6 max-w-6xl">
+
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-20 xl:gap-24 items-center">
+
+            <div data-aos="fade-right" class="w-full shadow-lg rounded-lg overflow-hidden lg:justify-self-start lg:col-span-2">
+                <div class="video-responsive-container">
+                    <iframe width="560" height="315" loading="lazy" src="https://www.youtube.com/embed/dyO5kCwVPd8?si=KED2qQ4s_CUfUXHd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            
+            <div class="lg:col-span-3" data-aos="fade-left">
+                <h2 class="text-3xl font-bold text-purple-300 mb-4">Uniting Logic and Creativity</h2>
+                <p class="text-gray-300 leading-relaxed">
+                    My journey began in the technology world, where as a developer, I learned to transform complex ideas into functional solutions. Logic, attention to detail and problem-solving became the foundation of my work.
+                    <br><br>
+                    Today, I apply this same analytical mindset to my great passion: audiovisual. I am in a career transition, combining my technical background with the art of storytelling, seeking to create video edits and motion graphics that not only impress visually, but are also constructed with precision and purpose.
+                </p>
+            
+                <div class="mt-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+                        
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-4">Audiovisual Skills</h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-center text-gray-300">
+                                    <svg class="w-10 h-10 mr-3 fill-current" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>VEGAS</title><path d="M12.2305 9.1035c-.6088 0-1.0881.0929-1.457.2774-.369.166-.627.4602-.793.8476-.166.4243-.2403.9974-.2403 1.7168 0 1.0168.1088 2.0758.7754 2.5996.2583.203.5894.2969 1.0137.2969.2952 0 .5903-.0004.83-.0742.2214-.0738.4248-.1845.5723-.332.0554-.037.13-.1292.1485-.166v.4784h.959v-3.1914h-1.0899v1.9922c-.1555.1037-.3215.1622-.5332.2227-.1291.0369-.2773.0547-.4433.0547-.2214 0-.4072-.0554-.5547-.166-.1292-.1107-.2396-.2945-.295-.5528-.1274-.595-.1062-1.58-.037-2.0293.0553-.2398.1108-.4255.203-.5547.2066-.3305.6712-.3496.9415-.3496h.5527c.1845 0 .3507.0176.5352.0176.1844 0 .3702.0011.5546.0195l.0723-.8867c-.37-.111-.5068-.1517-1.0508-.2012-.2206-.0242-.4428-.013-.664-.0195Zm9.7402 0c-.5842 0-1.1955.0965-1.5488.332-.2734.1823-.4805.4674-.4805 1.2364 0 .6867.1957 1.2693 1.1621 1.6054l1.125.3868c.1291.0369.2407.092.3145.1289.0738.0369.129.1117.166.1855.0759.1518.0788.533-.0195.664-.0554.0923-.1287.1476-.2579.166-.3046.0529-.6144.0322-.9218.0372-.166 0-.35-.0195-.5899-.0195-.2398 0-.5165-.0176-.83-.0176l-.0196.9023c.2398.0554.7754.13 1.1074.1485.332.0184.6094.037.7754.037.2767 0 .7008-.0188.959-.0741.2583-.0554.461-.1472.627-.2578.166-.1292.2758-.2952.3496-.4981.0738-.2214.1113-.4794.1113-.793 0-.4243-.0918-.7573-.2578-1.0156-.166-.2583-.4792-.4598-.9219-.6074l-1.0703-.3516c-.2214-.0738-.3687-.148-.461-.2402-.1538-.123-.1543-.4588-.0937-.7012.0185-.0553.0736-.1096.129-.1465.0737-.0184.149-.0566.2597-.0566.1107-.0185.2391-.0176.3867-.0176h.9219c.3136 0 .5902.0176.83.0176l.0196-.8477c-.5672-.1215-1.1484-.203-1.7715-.203Zm-15.293.0742c-.642 0-1.1797.4099-1.1797 1.125v3.3399c0 .332.1107.6076.332.8105.203.203.4972.3145.8477.3145h.9043c.2767 0 .7567-.0196.9043-.0196.1292-.0184.5152-.0362.7735-.0546v-.8848H7.121c-.1291 0-.2211-.0375-.295-.1113-.0553-.0738-.0937-.1854-.0937-.3145V12.295h2.2324v-.8672H6.7324v-.8672c0-.1475.02-.2387.0938-.3125.0553-.0737.1658-.1113.2949-.1113h2.1387V9.252c-.2583-.0185-.5706-.0382-.7735-.0567-.6023-.0273-1.2058-.0176-1.8086-.0176ZM0 9.2148l1.5313 5.2012c.0394.197.2115.332.4238.332H3.08c.2216 0 .3886-.146.4258-.332l1.5117-5.2012h-1.254l-1.1445 4.5196s-.0186.0176-.037.0176h-.1466c-.0184 0-.037.0008-.037-.0176l-1.125-4.5196zm16.4922 0c-.1191 0-.3802.0704-.4238.332l-1.6055 5.2208h1.2539l.4062-1.457h1.9004l.4063 1.457h1.2539L18.078 9.5469c-.0184-.0923-.0727-.1665-.1465-.2403a.4548.4548 0 0 0-.2773-.0918zm.6445.9766c.0185 0 .0371.0187.0371.0371l.5918 2.1406h-1.4023l.5898-2.1406c.0185-.0184.0187-.037.028-.037z"/></svg>
+                                    <span>Vegas Pro</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-4">Technical Base</h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-center text-gray-300">
+                                    <svg class="w-10 h-10 mr-3 fill-current" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>HTML5</title><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
+                                    <span>HTML5</span>
+                                </li>
+                                <li class="flex items-center text-gray-300">
+                                    <svg class="w-10 h-10 mr-3 fill-current" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>CSS</title><path d="M0 0v20.16A3.84 3.84 0 0 0 3.84 24h16.32A3.84 3.84 0 0 0 24 20.16V3.84A3.84 3.84 0 0 0 20.16 0Zm14.256 13.08c1.56 0 2.28 1.08 2.304 2.64h-1.608c.024-.288-.048-.6-.144-.84-.096-.192-.288-.264-.552-.264-.456 0-.696.264-.696.84-.024.576.288.888.768 1.08.72.288 1.608.744 1.92 1.296q.432.648.432 1.656c0 1.608-.912 2.592-2.496 2.592-1.656 0-2.4-1.032-2.424-2.688h1.68c0 .792.264 1.176.792 1.176.264 0 .456-.072.552-.24.192-.312.24-1.176-.048-1.512-.312-.408-.912-.6-1.32-.816q-.828-.396-1.224-.936c-.24-.36-.36-.888-.36-1.536 0-1.44.936-2.472 2.424-2.448m5.4 0c1.584 0 2.304 1.08 2.328 2.64h-1.608c0-.288-.048-.6-.168-.84-.096-.192-.264-.264-.528-.264-.48 0-.72.264-.72.84s.288.888.792 1.08c.696.288 1.608.744 1.92 1.296.264.432.408.984.408 1.656.024 1.608-.888 2.592-2.472 2.592-1.68 0-2.424-1.056-2.448-2.688h1.68c0 .744.264 1.176.792 1.176.264 0 .456-.072.552-.24.216-.312.264-1.176-.048-1.512-.288-.408-.888-.6-1.32-.816-.552-.264-.96-.576-1.2-.936s-.36-.888-.36-1.536c-.024-1.44.912-2.472 2.4-2.448m-11.031.018c.711-.006 1.419.198 1.839.63.432.432.672 1.128.648 1.992H9.336c.024-.456-.096-.792-.432-.96-.312-.144-.768-.048-.888.24-.12.264-.192.576-.168.864v3.504c0 .744.264 1.128.768 1.128a.65.65 0 0 0 .552-.264c.168-.24.192-.552.168-.84h1.776c.096 1.632-.984 2.712-2.568 2.688-1.536 0-2.496-.864-2.472-2.472v-4.032c0-.816.24-1.44.696-1.848.432-.408 1.146-.624 1.857-.63"/></svg>
+                                    <span>CSS3</span>
+                                </li>
+                                <li class="flex items-center text-gray-300">
+                                    <svg class="w-10 h-10 mr-3 fill-current" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>JavaScript</title><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
+                                    <span>JavaScript</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+         <section id="projetos" class="py-20 bg-[#100425]">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl font-bold">My Projects</h2>
+                    <p class="text-lg text-gray-400 mt-2">A selection of my works.</p>
+                </div>
+
+                <div id="filter-buttons" class="flex justify-center space-x-4 mb-12" data-aos="fade-up" data-aos-delay="100">
+                    <button class="filter-btn active-filter" data-category="all">All</button>
+                    <button class="filter-btn" data-category="audiovisual">Audio-visual</button>
+                    <button class="filter-btn" data-category="dev">Development</button>
+                </div>
+                <div id="projects-container" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    </div>
+            </div>
+        </section>
+    
+        <section id="depoimentos" class="py-20">
+            <div class="container mx-auto px-6">
+
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl font-bold">What they say About My Work</h2>
+                    <p class="text-lg text-gray-400 mt-2">Feedback from customers and employees.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+                    <div class="bg-[#1B0E3F] p-8 rounded-lg shadow-lg testimonial-card">
+                        <blockquote class="relative">
+                            <svg class="absolute top-0 left-0 w-8 h-8 text-purple-600 opacity-20 transform -translate-x-4 -translate-y-4" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                                <path d="M9.333 4C4.167 4 0 8.167 0 13.333c0 3.863 2.363 7.173 5.593 8.44C6.153 21.52 6 21.253 6 21c0-1.654 1.346-3 3-3h1.333V9.333C10.333 6.387 9.947 4 9.333 4zm19.333 0C23.5 4 19.333 8.167 19.333 13.333c0 3.863 2.363 7.173 5.593 8.44.56-.253.593-.52.593-.773 0-1.654 1.346-3 3-3H32V9.333C32 6.387 31.28 4 28.666 4z"></path>
+                            </svg>
+                            <p class="text-gray-300 italic leading-relaxed z-10 relative">
+                                "This is a sample text. Rodrigo has incredible attention to detail and delivered the edit exactly as I imagined. Communication was excellent from start to finish and the result exceeded my expectations."
+                            </p>
+                        </blockquote>
+                        <footer class="mt-6">
+                            <p class="font-bold text-white">Person's Name</p>
+                            <p class="text-sm text-purple-400">Position, Company or Relationship</p>
+                        </footer>
+                    </div>
+
+                    <div class="bg-[#1B0E3F] p-8 rounded-lg shadow-lg testimonial-card">
+                        <blockquote class="relative">
+                            <svg class="absolute top-0 left-0 w-8 h-8 text-purple-600 opacity-20 transform -translate-x-4 -translate-y-4" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                                <path d="M9.333 4C4.167 4 0 8.167 0 13.333c0 3.863 2.363 7.173 5.593 8.44C6.153 21.52 6 21.253 6 21c0-1.654 1.346-3 3-3h1.333V9.333C10.333 6.387 9.947 4 9.333 4zm19.333 0C23.5 4 19.333 8.167 19.333 13.333c0 3.863 2.363 7.173 5.593 8.44.56-.253.593-.52.593-.773 0-1.654 1.346-3 3-3H32V9.333C32 6.387 31.28 4 28.666 4z"></path>
+                            </svg>
+                            <p class="text-gray-300 italic leading-relaxed z-10 relative">
+                                "Working with Rodrigo on the development of our website was a great experience. He is proactive, understands the needs of the business and has technical knowledge that gave us a lot of confidence."
+                            </p>
+                        </blockquote>
+                        <footer class="mt-6">
+                            <p class="font-bold text-white">Other Person</p>
+                            <p class="text-sm text-purple-400">Position, Company or Relationship</p>
+                        </footer>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <section id="artigos" class="py-20 bg-[#100425]">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold">Articles and Reflection</h2>
+                    <p class="text-lg text-gray-400 mt-2">Sharing my own knowledge</p>
+                </div>
+
+            <div id="articles-container" class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"></div>
+                
+                <div class="text-center mt-12">
+                    <a href="blog.html" class="font-semibold text-purple-400 hover:text-purple-300 transition-colors">
+                        See all articles →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="py-20">
+            <div class="container mx-auto px-6 max-w-lg text-center">
+
+                <div class="inline-flex items-center bg-purple-900 bg-opacity-50 text-purple-300 text-sm font-semibold px-4 py-1 rounded-full mb-4" data-aos="fade-up">
+                    <span class="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
+                    Available for New Projects
+                </div>
+
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up" data-aos-delay="100">
+                    Got an idea? Let's talk.
+                </h2>
+                <p class="text-gray-300 mb-8" data-aos="fade-up" data-aos-delay="200">
+                    Got an idea? Let's talk. I'm excited to hear about your project. Fill out the form below or, if you prefer, send me an email<a href="mailto:seu-email@provedor.com" class="text-purple-400 font-semibold underline hover:text-purple-300">direct email</a>.
+                </p>
+            
+                <form action="https://formspree.io/f/xyzjogga" method="POST" class="space-y-6" data-aos="fade-up" data-aos-delay="300">
+                    <input type="text" name="name" placeholder="Seu Nome" required class="w-full p-3 bg-gray-800 rounded border border-gray-700 focus:ring-2 focus:ring-purple-500 focus:outline-none">
+                    <input type="email" name="email" placeholder="Seu E-mail" required class="w-full p-3 bg-gray-800 rounded border border-gray-700 focus:ring-2 focus:ring-purple-500 focus:outline-none">
+                    <textarea name="message" placeholder="Me conte um pouco sobre o seu projeto ou ideia..." required rows="5" class="w-full p-3 bg-gray-800 rounded border border-gray-700 focus:ring-2 focus:ring-purple-500 focus:outline-none"></textarea>
+                    <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">
+                    Start Conversation
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#100425] border-t border-gray-800 py-6">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-center md:text-left">
+                
+                <div class="text-gray-400 mb-4 md:mb-0">
+                    &copy; <span id="current-year"></span> Rodrigo S. R. All rights reserved.
+                </div>
+
+                <div class="flex space-x-6">
+                    <a href="https://github.com/WolfAllone" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-purple-400 transition-colors" aria-label="GitHub">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" clip-rule="evenodd" /></svg>
+                    </a>
+                    <a href="https://linkedin.com/in/rodrigo-silva-ramos-982693369/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-purple-400 transition-colors" aria-label="LinkedIn">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>    
+                    </a>
+                    <a href="mailto:rodrigosramos21@gmail.com" class="text-gray-400 hover:text-purple-400 transition-colors" aria-label="E-mail">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+                    </a>
+                </div>
+            </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/articles.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/script.js"></script> 
+
+    <div id="command-palette" class="hidden fixed inset-0 bg-black bg-opacity-70 z-50 items-start justify-center pt-20">
+    <div class="bg-[#1B0E3F] w-full max-w-xl rounded-lg shadow-lg">
+        <div class="p-4 border-b border-gray-700">
+            <input id="palette-search-input" type="text" placeholder="Digite um comando ou busque..." class="w-full bg-transparent text-white placeholder-gray-500 focus:outline-none">
+        </div>
+        <ul id="palette-results" class="max-h-80 overflow-y-auto">
+            <li class="p-4 text-gray-500">Nenhum comando recente.</li>
+        </ul>
+    </div>
+</body>
+</html>

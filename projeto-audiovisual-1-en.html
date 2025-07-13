@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="bg-[#0B021D] text-white scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Rodrigo S. R - Desenvolvedor e Editor</title>
+
+    <link rel="icon" type="image/png" href="/">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="./imgs/favicon.ico">
+
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.seusite.com/">
+    <meta property="og:title" content="You're on top - Edição e Legenda">
+    <meta property="og:description" content="Veja como todo o processo de edição desse reels na integra.">
+    <meta property="og:image" content="https://www.seusite.com/imgs/imagem-de-capa.jpg"> <meta property="twitter:card" content="summary_large_image">
+
+</head>
+<body class="lang-en">
+    <header class="bg-[#0B021D] sticky top-0 z-50 shadow-md backdrop-blur-sm bg-opacity-70">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            
+            <a href="index.html" class="text-2xl font-bold text-white tracking-wider">R.S</a>
+
+            <div class="hidden md:flex items-center">
+                <nav class="space-x-8">
+                    <a href="index.html#sobre" class="text-gray-300 hover:text-purple-400 transition-colors">About</a>
+                    <a href="index.html#projetos" class="text-gray-300 hover:text-purple-400 transition-colors">Projects</a>
+                    <a href="videografia.html" class="text-gray-300 hover:text-purple-400 transition-colors">Videography</a>
+                    <a href="processo.html" class="text-gray-300 hover:text-purple-400 transition-colors">Process</a>
+                    <a href="index.html#contato" class="text-gray-300 hover:text-purple-400 transition-colors">Contact</a>
+                    <a href="blog.html" class="text-gray-300 hover:text-purple-400 transition-colors">Blog</a>
+                </nav>
+
+                <button id="theme-toggle-button" class="ml-6 text-gray-300 hover:text-purple-400 transition-colors pl-8 border-l border-gray-700">
+                    <svg id="theme-icon-sun" class="w-6 h-6 hidden" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm-.707 7.072l.707-.707a1 1 0 10-1.414-1.414l-.707.707a1 1 0 001.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 100 2h1z" clip-rule="evenodd"></path></svg>
+                    <svg id="theme-icon-moon" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                </button>
+
+                <div id="language-switcher" class="relative ml-2 flex items-center bg-gray-800 bg-opacity-50 p-1 rounded-full">
+                    <div id="language-pill" class="absolute h-full bg-purple-600 rounded-full transition-all duration-300 ease-in-out"></div>
+
+                    <a href="projeto-audiovisual-1.html" class="lang-link px-3 py-1 text-sm font-medium transition-transform duration-200 hover:scale-110 relative z-10" data-lang="pt">PT</a>
+                    <a href="projeto-audiovisual-1-en.html" class="lang-link px-3 py-1 text-sm font-medium transition-transform duration-200 hover:scale-110 relative z-10" data-lang="en">EN</a>
+                </div>
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg id="icon-hamburger" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-[#100425]">
+            <a href="index.html#sobre" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">About</a>
+            <a href="index.html#projetos" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Projects</a>
+            <a href="videografia.html" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Videography</a>
+            <a href="processo.html" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Process</a>
+            <a href="index.html#contato" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Contact</a>
+            <a href="blog.html" class="text-gray-300 hover:text-purple-400 transition-colors">Blog</a>
+        </div>
+    </header>
+    <main>
+        <div class="container mx-auto px-6 py-16 md:py-24 max-w-4xl">
+
+            <h1 class="text-4xl md:text-5xl font-bold text-purple-400">"You're on Top"</h1>
+            <p class="text-lg text-gray-300 mt-2">Rainy night inspired by American Love.</p>
+
+
+            <div class="my-8 flex justify-center">
+                <div class="w-full max-w-sm"> <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/C_abc123..." data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                        <div style="padding:16px;">
+                            <a href="https://www.instagram.com/p/C_abc123..." style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                                </a>
+                        </div>
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DGbtzW1TAnl/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DGbtzW1TAnl/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Ver essa foto no Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DGbtzW1TAnl/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Uma publicação compartilhada por Rodrigo Silva Ramos (@w0lf_d3n)</a></p></div></blockquote>
+                    <script async src="//www.instagram.com/embed.js"></script>
+                    </div>
+            </div>
+            
+
+            <div class="bg-[#100425] p-6 rounded-lg grid grid-cols-2 md:grid-cols-4 gap-4 text-center my-12">
+                <div>
+                    <h4 class="text-sm text-gray-400">Function</h4>
+                    <p class="font-semibold text-white">Video Editor</p>
+                </div>
+                <div>
+                    <h4 class="text-sm text-gray-400">Tools</h4>
+                    <p class="font-semibold text-white">Sony Vegas</p>
+                </div>
+                <div>
+                    <h4 class="text-sm text-gray-400">Clients</h4>
+                    <p class="font-semibold text-white">@w0lf_d3n</p>
+                </div>
+                <div>
+                    <h4 class="text-sm text-gray-400">Year</h4>
+                    <p class="font-semibold text-white">2025</p>
+                </div>
+            </div>
+
+            <div class="prose prose-invert max-w-none prose-p:text-gray-300 prose-h2:text-white">
+                <br>
+                
+                <h2>The Challenge</h2>
+                <p>
+                    Getting the subtitles to appear at the right time, advancing frame by frame and making it 100% synchronized, was quite complicated.
+                </p>
+
+                <br>
+
+                <h2>My process</h2>
+                <p>
+                    <li>1º Write down all the words.</li>
+                    <li>2º Sync the words to the music.</li>
+                </p>
+
+                <br>
+                <h3>1. Process Step</h3>
+
+                <p>
+                    I looked up the lyrics of the song.
+
+                    <figure class="my-6">
+                        <img src="imgs/theWeeknd.png" alt="Print da tela do site Letras.mus.br" class="rounded-lg mt-4"> 
+                    <figcaption class="mt-3 text-sm text-center text-gray-400">
+                        Fonte: <a href="https://www.letras.mus.br" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 underline">letras.mus.br</a>
+                    </figcaption>
+
+                    </figure>
+                    
+                    <p>Fonte: Letras</p>
+                </p>
+
+                <br>
+
+                <h3>2. Process Step</h3>
+                <p>
+                    <li>Then I added the text to the video, formatted the text and synchronized the lyrics to the music.</li>
+                </p>
+                
+                <br>
+
+                <h2>The final result</h2>
+                <p>
+                    <li>This was the result, it was better than expected and it was a great challenge for me, I really enjoyed doing it and I believe I can improve even more.</li>
+                </p>
+
+            </div>
+        </div>
+        </main>
+
+           <footer class="bg-[#100425] border-t border-gray-800 py-6">
+            <div id="contato" class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-center md:text-left">
+                
+                <div class="text-gray-400 mb-4 md:mb-0">
+                    &copy; <span id="current-year"></span> Rodrigo S. R. All rights reserved.
+                </div>
+
+                <div class="flex space-x-6">
+                    <a href="https://github.com/WolfAllone" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-purple-400 transition-colors" aria-label="GitHub">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" clip-rule="evenodd" /></svg>
+                    </a>
+                    <a href="https://linkedin.com/in/rodrigo-silva-ramos-982693369/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-purple-400 transition-colors" aria-label="LinkedIn">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>    
+                    </a>
+                    <a href="mailto:rodrigosramos21@gmail.com" class="text-gray-400 hover:text-purple-400 transition-colors" aria-label="E-mail">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+                    </a>
+                </div>
+            </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init(); // Inicializa o AOS nesta página também
+    </script>
+
+</body>
+
+</html>

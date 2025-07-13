@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="bg-[#0B021D] text-white">
+<head>
+    <title>Codec | Melhor formato para Web</title>
+    <meta name="description" content="Como a lógica e a organização de um desenvolvedor podem transformar o fluxo de trabalho no audiovisual.">
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../imgs/favicon.ico">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/toolbar/prism-toolbar.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="lang-pt">
+    <header class="bg-[#0B021D] sticky top-0 z-50 shadow-md backdrop-blur-sm bg-opacity-70">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            
+            <a href="../index.html" class="text-2xl font-bold text-white tracking-wider">R.S</a>
+
+            <div class="hidden md:flex items-center">
+                <nav class="space-x-8">
+                    <a href="../index.html#sobre" class="text-gray-300 hover:text-purple-400 transition-colors">Sobre</a>
+                    <a href="../index.html#projetos" class="text-gray-300 hover:text-purple-400 transition-colors">Projetos</a>
+                    <a href="../videografia.html" class="text-gray-300 hover:text-purple-400 transition-colors">Videografia</a>
+                    <a href="../processo.html" class="text-gray-300 hover:text-purple-400 transition-colors">Processo</a>
+                    <a href="../index.html#contato" class="text-gray-300 hover:text-purple-400 transition-colors">Contato</a>
+                    <a href="../blog.html" class="text-gray-300 hover:text-purple-400 transition-colors">Blog</a>
+                </nav>
+
+                <button id="theme-toggle-button" class="ml-6 text-gray-300 hover:text-purple-400 transition-colors pl-8 border-l border-gray-700">
+                    <svg id="theme-icon-sun" class="w-6 h-6 hidden" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm-.707 7.072l.707-.707a1 1 0 10-1.414-1.414l-.707.707a1 1 0 001.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 100 2h1z" clip-rule="evenodd"></path></svg>
+                    <svg id="theme-icon-moon" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                </button>
+
+                <div id="language-switcher" class="relative ml-2 flex items-center bg-gray-800 bg-opacity-50 p-1 rounded-full">
+                    <div id="language-pill" class="absolute h-full bg-purple-600 rounded-full transition-all duration-300 ease-in-out"></div>
+
+                    <a href="artigo-10.html" class="lang-link px-3 py-1 text-sm font-medium transition-transform duration-200 hover:scale-110 relative z-10" data-lang="pt">PT</a>
+                    <a href="artigo-10-en.html" class="lang-link px-3 py-1 text-sm font-medium transition-transform duration-200 hover:scale-110 relative z-10" data-lang="en">EN</a>
+                </div>
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg id="icon-hamburger" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg id="icon-hamburger" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-[#100425]">
+            <a href="../index.html#sobre" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Sobre</a>
+            <a href="../index.html#projetos" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Projetos</a>
+            <a href="../videografia.html" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Videografia</a>
+            <a href="../processo.html" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Processo</a>
+            <a href="../index.html#contato" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Contato</a>
+            <a href="../blog.html" class="text-gray-300 hover:text-purple-400 transition-colors">Blog</a>
+        </div>
+    </header>
+    <main>
+        <div class="container mx-auto px-6 py-16 md:py-24 max-w-3xl">
+            <article class="prose prose-invert max-w-none prose-p:text-gray-300 prose-headings:text-white prose-a:text-purple-400 prose-strong:text-white">
+                
+                <h1>Desmistificando Codecs: Qual o Melhor Formato para a Web?</h1>
+                
+                <p class="text-sm text-gray-400">Publicado em 29 de Junho de 2025 • Leitura de 5 min</p>
+
+                <img src="../imgs/codecTypes.png" alt="Capa do artigo" class="rounded-lg shadow-lg">
+                
+                <p>
+                    Você já finalizou uma edição incrível, exportou o vídeo, e o arquivo final tinha 5GB? Ou talvez você subiu um vídeo para um site e ele demorou uma eternidade para carregar? A resposta para esses problemas quase sempre está em uma palavra técnica e muitas vezes mal compreendida: o codec.
+                </p>
+                <p>
+                     Neste guia, vamos desmistificar o mundo dos codecs e formatos de vídeo. O objetivo não é se aprofundar em detalhes técnicos complexos, mas sim te dar um conhecimento prático para fazer a melhor escolha na hora de exportar seu vídeo para a web, encontrando o equilíbrio perfeito entre qualidade e performance.
+                </p>
+
+
+
+                <h2>Seção 1: A Diferença Crucial - Container vs. Codec</h2>
+                
+                <p>Pense em um arquivo de vídeo como uma caixa de presente.</p>
+
+                <p>
+                    O container é a caixa em si. Ela pode ter diferentes formatos e cores, mas sua função é guardar tudo lá dentro: o vídeo, o áudio, legendas, etc. Quando você vê um arquivo video.mp4, .MP4 é o tipo da caixa.
+                </p>
+                <p>
+                    O codec é o método como o presente foi dobrado e embalado lá dentro para caber na caixa. Codificador/Decodificador. É o 'idioma' ou a técnica de compressão usada para tornar o arquivo de vídeo pequeno o suficiente para ser armazenado e transmitido pela internet.
+                </p>
+                <p>
+                    Assim, você pode ter uma caixa .MP4 que contém um vídeo 'embalado' com o codec H.264, ou a mesma caixa .MP4 com um vídeo 'embalado' com o codec H.265. A caixa é o container, a forma de embalar é o codec.
+                </p>
+
+                <h2>Seção 2: Os Codecs de Entrega (Para a Web e Streaming)</h2>
+                
+                <h3>H.264 (ou AVC) - O Rei da Compatibilidade</h3>
+                <p>
+                    Se você precisa que seu vídeo toque em praticamente qualquer dispositivo no planeta — de celulares antigos a Smart TVs e todos os navegadores — o H.264 é a escolha segura. Ele não é o mais eficiente, mas é o padrão universal.
+                </p>
+                <p>
+                    <strong>Quando usar:</strong> Para máxima compatibilidade, vídeos para redes sociais e e-mails.
+                </p>
+                
+                <h3>H.265 (ou HEVC) - O Sucessor Eficiente</h3>
+
+                <p>
+                    É a evolução do H.264. Ele consegue entregar a mesma qualidade de imagem com um arquivo cerca de 40-50% menor. É o codec preferido para streaming em 4K, como na Netflix.
+                </p>
+                <p>
+                   <strong>Quando usar:</strong> Para vídeos de alta qualidade no seu portfólio ou site, onde você sabe que seu público usará dispositivos mais modernos.
+                </p>
+
+                <h3>AV1 - O Futuro é Aberto e Gratuito</h3>
+
+                <p>
+                    É o codec mais moderno da lista, criado por gigantes como Google, Apple e Amazon. É ainda mais eficiente que o H.265 e, o mais importante, é de código aberto e livre de royalties. O YouTube já o utiliza massivamente.
+                </p> 
+                <p> 
+                    <strong>Quando usar:</strong> É a melhor escolha para o futuro. Hoje, é excelente para vídeos no YouTube e para quem quer a máxima compressão com a melhor qualidade
+                </p>
+
+                <h2>Seção 3: Codecs de Edição (Por que não usá-los na Web?)</h2>
+
+                <p>
+                    E o Apple ProRes, que meu editor pediu? E o Avid DNxHD? É crucial entender que estes são codecs de edição (ou intermediários). O objetivo deles é preservar o máximo de qualidade de imagem durante a pós-produção, com pouquíssima compressão. O resultado são arquivos gigantescos, perfeitos para trabalhar na ilha de edição sem perder dados, mas completamente inviáveis para carregar em um site.
+                </p>
+
+                <h2>Conclusão: Então, Qual Usar? (O Resumo Prático)</h2>
+
+                <ul class="list-disc list-inside space-y-4 my-6">
+                    <li>
+                        <strong>Para Máxima Compatibilidade (A Escolha Segura):</strong> Use H.264 dentro de um container .MP4. É a combinação que nunca falha.
+                    </li>
+                    <li>
+                        <strong>Para a Melhor Qualidade no seu Portfólio:</strong> Se você quer exibir um vídeo em 4K com a melhor aparência possível, H.265 (HEVC) é uma escolha fantástica, resultando em arquivos menores que o H.264.
+                    </li>
+                    <li>
+                        <strong>A Regra de Ouro do Workflow:</strong> Edite em um formato de alta qualidade (como ProRes, se a câmera permitir) e sempre exporte a versão final para a web em H.264 ou H.265.
+                    </li>
+                </ul>
+                
+                <p>
+                    Entender sobre codecs é deixar de ser apenas um editor e se tornar também um técnico de mídia. É a habilidade que garante que seu trabalho criativo, no qual você investiu tanto tempo, seja visto pelo maior número de pessoas, com a melhor qualidade e a performance que ele merece.
+                </p>
+            </article>
+        </div>
+    </main>
+
+    <script src="../js/script.js" defer></script>
+    <script src="artigos.js"></script>
+    <script src="../js/projects.js"></script> 
+    <script src="../js/articles.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

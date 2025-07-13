@@ -1,0 +1,30 @@
+<meta name="description" content="Portfólio de [Seu Nome Completo], profissional de audiovisual e desenvolvedor. Veja meus projetos de edição de vídeo, motion graphics e desenvolvimento web.">
+<meta name="author" content="[Seu Nome Completo]">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.seusite.com/"> <meta property="og:title" content="[Seu Nome Completo] | Portfólio Audiovisual e de Desenvolvimento">
+<meta property="og:description" content="Explorando a intersecção entre tecnologia e criatividade. Conheça meus projetos de edição de vídeo, motion graphics e desenvolvimento web.">
+<meta property="og:image" content="https://www.seusite.com/imgs/capa-portfolio.jpg"> <meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://www.seusite.com/"> <meta property="twitter:title" content="[Seu Nome Completo] | Portfólio Audiovisual e de Desenvolvimento">
+<meta property="twitter:description" content="Explorando a intersecção entre tecnologia e criatividade. Conheça meus projetos de edição de vídeo, motion graphics e desenvolvimento web.">
+<meta property="twitter:image" content="https://www.seusite.com/imgs/capa-portfolio.jpg"> ```
+
+### O que fazer:
+
+1.  **Substitua** todos os textos entre colchetes `[...]` pelas suas informações pessoais.
+2.  Quando você hospedar seu site, lembre-se de trocar `https://www.seusite.com/` pela URL real do seu domínio. Por enquanto, você pode deixar o caminho relativo para a imagem (`imgs/capa-portfolio.jpg`).
+3.  **Repita o processo** para suas páginas de estudo de caso, mas mude o `og:title` e `og:description` para serem específicos daquele projeto. Por exemplo:
+    * `og:title`: "Estudo de Caso: Videoclipe para a Banda X"
+    * `og:description`: "Veja o processo de edição e pós-produção do videoclipe 'Luzes da Cidade'..."
+
+### Passo 3: Teste o Resultado
+
+Depois de subir as alterações para seu site online, você pode testar como o link vai aparecer usando estas ferramentas oficiais:
+
+* **Para LinkedIn:** [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/)
+* **Para Facebook/Instagram:** [Depurador de Compartilhamento do Facebook](https://developers.facebook.com/tools/debug/)
+* **Para Twitter:** [Card Validator](https://cards-dev.twitter.com/validator)
+
+Basta colar a URL do seu site e a ferramenta mostrará a pré-visualização.
+
+Com isso, seu portfólio estará tecnicamente pronto para ser compartilhado com o mundo, causando uma excelente primeira impressão. Quando terminar, podemos falar sobre a última grande sugestão, que é a seção de blog/artigos para demonstrar sua expertise.

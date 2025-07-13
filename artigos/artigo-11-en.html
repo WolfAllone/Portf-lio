@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#0B021D] text-white">
+<head>
+    <title>If/Else | Narrative</title>
+    <meta name="description" content="Como a lógica e a organização de um desenvolvedor podem transformar o fluxo de trabalho no audiovisual.">
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../imgs/favicon.ico">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/toolbar/prism-toolbar.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="en">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            
+            <a href="../index-en.html" class="text-2xl font-bold text-white tracking-wider">R.S</a>
+
+            <div class="hidden md:flex items-center">
+                <nav class="space-x-8">
+                    <a href="../index-en.html#sobre" class="text-gray-300 hover:text-purple-400 transition-colors">About</a>
+                    <a href="../index-en.html#projetos" class="text-gray-300 hover:text-purple-400 transition-colors">Projects</a>
+                    <a href="../videography-en.html" class="text-gray-300 hover:text-purple-400 transition-colors">Videography</a>
+                    <a href="../process-en.html" class="text-gray-300 hover:text-purple-400 transition-colors">Process</a>
+                    <a href="../index-en.html#contato" class="text-gray-300 hover:text-purple-400 transition-colors">Contact</a>
+                    <a href="../blog-en.html" class="text-gray-300 hover:text-purple-400 transition-colors">Blog</a>
+                </nav>
+
+                <button id="theme-toggle-button" class="ml-6 text-gray-300 hover:text-purple-400 transition-colors pl-8 border-l border-gray-700">
+                    <svg id="theme-icon-sun" class="w-6 h-6 hidden" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm-.707 7.072l.707-.707a1 1 0 10-1.414-1.414l-.707.707a1 1 0 001.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 100 2h1z" clip-rule="evenodd"></path></svg>
+                    <svg id="theme-icon-moon" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                </button>
+
+                <div id="language-switcher" class="relative ml-2 flex items-center bg-gray-800 bg-opacity-50 p-1 rounded-full">
+                    <div id="language-pill" class="absolute h-full bg-purple-600 rounded-full transition-all duration-300 ease-in-out"></div>
+
+                    <a href="artigo-6.html" class="lang-link px-3 py-1 text-sm font-medium transition-transform duration-200 hover:scale-110 relative z-10" data-lang="pt">PT</a>
+                    <a href="artigo-6-en.html" class="lang-link px-3 py-1 text-sm font-medium transition-transform duration-200 hover:scale-110 relative z-10" data-lang="en">EN</a>
+                </div>
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg id="icon-hamburger" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg id="icon-hamburger" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-[#100425]">
+            <a href="../index-en.html#sobre" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">About</a>
+            <a href="../index-en.html#projetos" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Projecs</a>
+            <a href="../videografia-en.html" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Videography</a>
+            <a href="../processoe-en.html" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Process</a>
+            <a href="../index-en.html#contato" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Contact</a>
+            <a href="../blog-en.html" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Blog</a>
+        </div>
+    </header>
+    <main>
+        <div class="container mx-auto px-6 py-16 md:py-24 max-w-3xl">
+            <article class="prose prose-invert max-w-none prose-p:text-gray-300 prose-headings:text-white prose-a:text-purple-400 prose-strong:text-white">
+                
+                <h1>The Logic of 'If/Else' in Building a Narrative</h1>
+
+                <p class="text-sm text-gray-400">Published on July 9, 2025 • 5 min read</p>
+
+                <img src="../imgs/logicaIfElse.png" alt="Article cover about logic and editing" class="rounded-lg shadow-lg">
+
+                <p>What do a programmer and a video editor have in common? At first glance, almost nothing. One deals with logic, data, and algorithms; the other, with emotion, rhythm, and image. But what if I told you that the fundamental structure of good software and a good story is surprisingly similar?</p>
+
+                <p>In this article, I want to explore how conditional logic <code>'if/else'</code>, one of the pillars of programming, is the tool that, invisibly, we use all the time in the editing suite to build a narrative, guide the viewer's emotion, and give meaning to every cut in a music video.</p>
+
+                <h2>1. What is if/else in Programming?</h2>
+                <p>
+                    In essence, <code>if/else</code> is a decision-making process based on a condition. <code>IF</code> the weather forecast says it will rain, <code>THEN</code> I take an umbrella. <code>ELSE</code>, I leave it at home. It is a choice between two paths based on a condition.
+                </p>
+
+                <h2>2. The if/else in the Editing Suite</h2>
+                <ul class="list-none space-y-4">
+                    <li>
+                        <strong>The Choice of Reaction:</strong> <code>IF</code> the song's lyric says 'my world collapsed', <code>THEN</code> the cut shows a close-up on the actor's sad face. <code>ELSE</code>, if the lyric is about overcoming, the cut shows the same actor standing up, with a determined expression.
+                    </li>
+                    <li>
+                        <strong>The Choice of Rhythm:</strong> <code>IF</code> the drum beat is strong and sharp, <code>THEN</code> the cut between scenes is hard and fast, matching the sonic impact. <code>ELSE</code>, if the sound is a soft, continuous violin, the transition is a slow fade (dissolve), connecting the scenes fluidly.
+                    </li>
+                    <li>
+                        <strong>The Narrative Choice:</strong> <code>IF</code> we want to show that the character is feeling lost, <code>THEN</code> we use wider camera shots, showing their loneliness in the vastness of the scenery. <code>ELSE</code>, if we want to show their confidence, we use tighter shots and a low-angle shot (from the bottom up) to empower them.
+                    </li>
+                </ul>
+
+                <h2>3. Why Does Thinking This Way Make You a Better Editor?</h2>
+                <ul class="list-disc list-inside space-y-4">
+                    <li>
+                        <strong>Editing with Intent:</strong> Thinking in <code>'if/else'</code> forces you to justify every cut. It's no longer 'I'll cut here because it looks cool,' but rather 'I'll cut here BECAUSE condition X was met, and this serves purpose Y of the story.'
+                    </li>
+                    <li>
+                        <strong>Efficiency and Focus:</strong> This logical structure helps navigate through hours of raw footage. You aren't looking for 'any good shot,' you're looking for the specific shot that satisfies the condition of that moment.
+                    </li>
+                    <li>
+                        <strong>Clear Communication:</strong> It makes communication with directors and clients easier. You can explain your editing choices logically: 'I chose this take because the condition was to show vulnerability.'
+                    </li>
+                </ul>
+
+                <h2>Conclusion</h2>
+                <p>
+                    In the end, both the programmer and the editor are architects of experiences. Both use logical structures to guide the user (or viewer) through a journey with a beginning, middle, and end. The <code>if/else</code> stops being just a technical tool and becomes a powerful storytelling tool. The next time you watch a music video, try to see the conditions behind each cut. You might be surprised by the logic that exists behind the emotion.
+                </p>
+            </article>
+        </div>
+    </main>
+
+    <script src="../js/script.js" defer></script>
+    <script src="artigos.js"></script>
+    <script src="../js/projects.js"></script> 
+    <script src="../js/articles.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

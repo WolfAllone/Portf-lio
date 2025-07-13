@@ -1,0 +1,298 @@
+/* styles.css */
+
+/* Estilo Padrão (Dark) */
+body {
+  background-color: #0B021D;
+  color: #FFF;
+}
+
+/* Estilo quando o Light Mode está ativo */
+.light-mode body {
+  background-color: #F3F4F6; /* Um cinza claro */
+  color: #111827; /* Um cinza escuro */
+}
+
+#projects-container {
+    perspective: 1000px;
+}
+
+.project-card {
+    transform-style: preserve-3d;
+}
+
+.project-card:hover {
+    background-color: rgba(139, 92, 246, 0.05);
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.6);
+}
+
+/* =================================================== */
+/* ESTILOS PARA CONTAINER DE VÍDEO RESPONSIVO      */
+/* =================================================== */
+
+.video-responsive-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* Proporção de 16:9 (calculado como 9 / 16 = 0.5625) */
+}
+
+.video-responsive-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.filter-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    color: #e5e7eb;
+    transition: color 0.3s, background-color 0.3s;
+}
+.active-filter, .filter-btn:hover {
+    background-color: #9333EA;
+    color: #FFFFFF;
+}
+
+
+/* Estilo para o card de depoimento */
+.testimonial-card {
+    border-left: 4px solid #9333EA; /* Cor roxa do seu tema */
+}
+/* =============================================== */
+/* ANIMAÇÃO PARA O MENU MOBILE                 */
+/* =============================================== */
+
+#mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+#mobile-menu:not(.hidden) {
+  max-height: 500px; /* Um valor alto o suficiente para caber todos os links */
+}
+
+/* =============================================== */
+/* ESTILOS PARA O TEMA CLARO (LIGHT MODE)        */
+/* =============================================== */
+
+/* =============================================== */
+/* ESTILOS PARA O TEMA CLARO (LIGHT MODE)        */
+/* =============================================== */
+
+.light-mode {
+  --bg-color: #f3f4f6; /* cinza bem claro */
+  --bg-secondary-color: #ffffff; /* branco */
+  --text-color: #1f2937; /* cinza bem escuro */
+  --text-secondary-color: #4b5563; /* cinza médio */
+  --accent-color: #7c3aed; /* roxo principal */
+  --accent-text-color: #a78bfa; /* roxo claro */
+}
+
+/* Fundo e Texto Padrão */
+.light-mode body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Cabeçalho e Rodapé */
+.light-mode header, .light-mode footer {
+  background-color: rgba(255, 255, 255, 0.7); /* Branco com transparência */
+  border-color: #e5e7eb; /* cinza claro para as bordas */
+}
+.light-mode header a, .light-mode footer a {
+  color: var(--text-secondary-color);
+}
+.light-mode header a:hover, .light-mode footer a:hover {
+  color: var(--accent-color);
+}
+.light-mode header .text-white, .light-mode footer .text-white {
+  color: var(--text-color) !important;
+}
+
+/* Títulos e Textos */
+.light-mode h1, .light-mode h2, .light-mode h3, .light-mode h4, .light-mode strong {
+  color: var(--text-color);
+}
+.light-mode .text-gray-300, .light-mode .text-gray-400 {
+  color: var(--text-secondary-color);
+}
+.light-mode .text-purple-300, .light-mode .text-purple-400 {
+  color: var(--accent-color);
+}
+
+/* Alvo: Seções que usam a cor de fundo escura */
+.light-mode #projetos,
+.light-mode #depoimentos,
+.light-mode #artigos,
+.light-mode footer {
+  background-color: var(--bg-secondary-color); /* Usa a variável --bg-secondary-color (branco) */
+}
+
+/* Alvo: Cards de Projeto, Depoimento e Artigo */
+.light-mode .project-card,
+.light-mode .testimonial-card,
+.light-mode #container > a { /* Seletor para os cards de artigo */
+  background-color: #e5e7eb; /* Um cinza um pouco mais escuro que o fundo branco, para dar contraste */
+}
+
+/* Alvo: Menu mobile */
+.light-mode #mobile-menu {
+  background-color: #f9fafb; /* Um branco levemente acinzentado */
+}
+.light-mode #mobile-menu a:hover {
+  background-color: #e5e7eb; /* Um cinza mais escuro no hover */
+}
+/* Formulário */
+.light-mode form input, .light-mode form textarea {
+  background-color: #e5e7eb;
+  border-color: #d1d5db;
+  color: var(--text-color);
+}
+.light-mode form input::placeholder, .light-mode form textarea::placeholder {
+  color: var(--text-secondary-color);
+}
+
+/* Efeito Matrix (opcional: mudar as cores) */
+.light-mode #matrix-canvas {
+  opacity: 0.3; /* Deixa o efeito mais sutil no modo claro */
+}
+
+/* Textos dentro dos cards de projeto, depoimento e artigo */
+.light-mode .project-card h3,
+.light-mode .testimonial-card p,
+
+
+.light-mode .project-card p,
+.light-mode .testimonial-card footer p,
+
+
+
+/* Define o estilo do botão inativo no modo claro */
+.light-mode .filter-btn {
+    color: var(--text-secondary-color); /* Um cinza médio para o texto */
+    background-color: #e5e7eb; /* Um fundo cinza bem claro para o botão */
+}
+
+/* Garante que o botão ativo e o hover continuem com o destaque roxo */
+.light-mode .filter-btn:hover, 
+.light-mode .active-filter {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+}
+
+/* Estilo padrão (Dark Mode) */
+.hero-section {
+    background-image: linear-gradient(rgba(11, 2, 29, 0.8), rgba(11, 2, 29, 1));
+}
+
+/* Estilo para o Light Mode */
+.light-mode .hero-section {
+    /* Um gradiente suave para o modo claro */
+    background-image: linear-gradient(rgba(229, 231, 235, 0.8), rgba(243, 244, 246, 1));
+}
+/* Alvo: O fundo de cada card de artigo (na home e na pág. de blog) */
+.light-mode #artigos .grid > a,
+.light-mode #all-articles-container > a {
+  background-color: #e5e7eb; /* um cinza um pouco mais escuro que o fundo */
+}
+
+/* Alvo: O título (h3) dentro do card de artigo */
+.light-mode #artigos .grid > a h3,
+.light-mode #all-articles-container > a h3 {
+  color: var(--text-color);
+}
+
+/* Estilo Padrão (Dark Mode) para TODAS as tags */
+.tag-badge {
+    display: inline-block;
+    background-color: #581c87; /* Roxo mais escuro para o fundo */
+    color: #ddd6fe; /* Roxo bem claro para o texto */
+    font-size: 0.75rem; /* 12px */
+    font-weight: 600;
+    padding: 0.25rem 0.75rem; /* 4px vertical, 12px horizontal */
+    border-radius: 9999px; /* Formato de pílula */
+    transition: all 0.3s ease;
+}
+
+/* Estilo para TODAS as tags quando o MODO CLARO está ativo */
+.light-mode .tag-badge {
+    background-color: #581c87; /* Fundo cinza claro */
+    color: #FFFFFF; /* Texto cinza escuro */
+}
+
+/* =============================================== */
+/* ESTILOS DE IMPRESSÃO (PRINT STYLESHEET)       */
+/* =============================================== */
+
+@media print {
+
+    /* Esconde elementos desnecessários na impressão */
+    header, 
+    footer,
+    #projetos, 
+    #depoimentos, 
+    #artigos, 
+    #contato,
+    .video-responsive-container, /* Esconde o vídeo da seção 'Sobre' */
+    #matrix-canvas {
+        display: none !important;
+    }
+
+    /* Reseta as cores e a fonte para um padrão de documento */
+    body {
+        background-color: #FFFFFF !important;
+        color: #000000 !important;
+        font-family: 'Times New Roman', Times, serif !important;
+        line-height: 1.5;
+    }
+
+    /* Remove todos os espaçamentos extras e bordas */
+    section, div, article {
+        box-shadow: none !important;
+        border: none !important;
+        padding: 0 !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .container {
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* Garante que os títulos fiquem pretos */
+    h1, h2, h3, h4 {
+        color: #000000 !important;
+    }
+
+    /* Faz a seção 'Sobre' e suas colunas se comportarem como um bloco único */
+    #sobre .grid, #sobre .grid > div {
+        display: block !important;
+    }
+    
+    /* Garante que os links sejam identificáveis na impressão */
+    a, a:visited {
+        color: #000000 !important;
+        text-decoration: underline !important;
+    }
+
+    /* (Opcional, mas muito profissional) Mostra a URL dos links após o texto */
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8rem;
+        color: #555555;
+    }
+}
+
+/* =============================================== */
+/* ESTILOS PARA O SELETOR DE IDIOMAS ANIMADO   */
+/* =============================================== */
+
+/* Garante que o texto do idioma ativo fique branco */
+#language-switcher .active {
+    color: #FFFFFF !important;
+}

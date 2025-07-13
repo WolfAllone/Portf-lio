@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="bg-[#0B021D] text-white">
+<head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Meu Processo de Trabalho</title>
+
+    <link rel="icon" type="image/png" href="/">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="./imgs/favicon.ico">
+
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.seusite.com/">
+    <meta property="og:title" content="Meu Processo de Trabalho">
+    <meta property="og:description" content="Conheça meu processo de trabalho no projetos de edição de vídeo, motion graphics e desenvolvimento web.">
+    <meta property="og:image" content="https://www.seusite.com/imgs/imagem-de-capa.jpg"> <meta property="twitter:card" content="summary_large_image">
+
+</head>
+</head>
+<body class="lang-pt">
+    <header class="bg-[#0B021D] sticky top-0 z-50 shadow-md backdrop-blur-sm bg-opacity-70">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            
+            <a href="index.html" class="text-2xl font-bold text-white tracking-wider">R.S</a>
+            
+            <div class="hidden md:flex items-center">
+                <nav class="space-x-8">
+                    <a href="index.html#sobre" class="text-gray-300 hover:text-purple-400 transition-colors">Sobre</a>
+                    <a href="index.html#projetos" class="text-gray-300 hover:text-purple-400 transition-colors">Projetos</a>
+                    <a href="videografia.html" class="text-gray-300 hover:text-purple-400 transition-colors">Videografia</a>
+                    <a href="processo.html" class="text-gray-300 hover:text-purple-400 transition-colors">Processo</a>
+                    <a href="index.html#contato" class="text-gray-300 hover:text-purple-400 transition-colors">Contato</a>
+                    <a href="blog.html" class="text-gray-300 hover:text-purple-400 transition-colors">Blog</a>
+                </nav>
+
+                <button id="theme-toggle-button" class="ml-6 text-gray-300 hover:text-purple-400 transition-colors pl-8 border-l border-gray-700">
+                    <svg id="theme-icon-sun" class="w-6 h-6 hidden" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm-.707 7.072l.707-.707a1 1 0 10-1.414-1.414l-.707.707a1 1 0 001.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 100 2h1z" clip-rule="evenodd"></path></svg>
+                    <svg id="theme-icon-moon" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                </button>
+
+                <div id="language-switcher" class="relative ml-2 flex items-center bg-gray-800 bg-opacity-50 p-1 rounded-full">
+                    <div id="language-pill" class="absolute h-full bg-purple-600 rounded-full transition-all duration-300 ease-in-out"></div>
+
+                    <a href="processo.html" class="lang-link px-3 py-1 text-sm font-medium transition-transform duration-200 hover:scale-110 relative z-10" data-lang="pt">PT</a>
+                    <a href="processo-en.html" class="lang-link px-3 py-1 text-sm font-medium transition-transform duration-200 hover:scale-110 relative z-10" data-lang="en">EN</a>
+                </div>
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg id="icon-hamburger" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-[#100425]">
+            <a href="index.html#sobre" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Sobre</a>
+            <a href="index.html#projetos" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Projetos</a>
+            <a href="videografia.html" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Videografia</a>
+            <a href="processo.html" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Processo</a>
+            <a href="index.html#contato" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Contato</a>
+            <a href="blog.html" class="text-gray-300 hover:text-purple-400 transition-colors">Blog</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container mx-auto px-6 py-16 md:py-24 max-w-4xl">
+            
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h1 class="text-4xl md:text-5xl font-bold text-purple-400">Meu Processo de Trabalho</h1>
+                <p class="text-lg text-gray-300 mt-4 max-w-2xl mx-auto">Da concepção à entrega final, cada projeto segue um fluxo de trabalho estruturado para garantir qualidade, clareza e os melhores resultados.</p>
+            </div>
+
+            <div class="space-y-16">
+
+                <div class="flex flex-col md:flex-row items-center" data-aos="fade-up">
+                    <div class="flex-shrink-0 mb-6 md:mb-0 md:mr-8 text-center">
+                        <div class="text-6xl font-bold text-purple-800 text-opacity-50">01</div>
+                        <svg class="w-12 h-12 text-purple-400 mx-auto mt-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a2 2 0 01-2-2V10a2 2 0 012-2h8z" /></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white">Imersão e Briefing</h3>
+                        <p class="mt-2 text-gray-300 leading-relaxed">A primeira etapa é sempre a mais importante: uma conversa profunda para entender seus objetivos, seu público e a mensagem central que você quer passar. É aqui que alinhamos expectativas e definimos as bases para um projeto de sucesso.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center" data-aos="fade-up">
+                    <div class="flex-shrink-0 mb-6 md:mb-0 md:mr-8 text-center">
+                        <div class="text-6xl font-bold text-purple-800 text-opacity-50">02</div>
+                        <svg class="w-12 h-12 text-purple-400 mx-auto mt-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" /></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white">Roteiro e Planejamento</h3>
+                        <p class="mt-2 text-gray-300 leading-relaxed">Com o briefing em mãos, desenvolvo a estrutura narrativa do vídeo. Seja um roteiro detalhado ou um storyboard visual, esta fase garante que a história seja contada da forma mais clara e impactante possível antes de começarmos a editar.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center" data-aos="fade-up">
+                    <div class="flex-shrink-0 mb-6 md:mb-0 md:mr-8 text-center">
+                        <div class="text-6xl font-bold text-purple-800 text-opacity-50">03</div>
+                        <svg class="w-12 h-12 text-purple-400 mx-auto mt-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" /></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white">Edição e Montagem</h3>
+                        <p class="mt-2 text-gray-300 leading-relaxed">É aqui que a mágica acontece. Seleciono as melhores cenas, construo o ritmo da narrativa, sincronizo o áudio e monto a primeira versão do vídeo, sempre focado na história que planejamos contar.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center" data-aos="fade-up">
+                    <div class="flex-shrink-0 mb-6 md:mb-0 md:mr-8 text-center">
+                        <div class="text-6xl font-bold text-purple-800 text-opacity-50">04</div>
+                        <svg class="w-12 h-12 text-purple-400 mx-auto mt-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white">Pós-Produção e Refinamento</h3>
+                        <p class="mt-2 text-gray-300 leading-relaxed">Nesta fase, o vídeo ganha seu brilho final. Faço a correção de cor para criar a atmosfera certa, adiciono motion graphics, trato o áudio e insiro a trilha sonora para dar o toque emocional necessário.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center" data-aos="fade-up">
+                    <div class="flex-shrink-0 mb-6 md:mb-0 md:mr-8 text-center">
+                        <div class="text-6xl font-bold text-purple-800 text-opacity-50">05</div>
+                        <svg class="w-12 h-12 text-purple-400 mx-auto mt-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white">Revisão e Entrega Final</h3>
+                        <p class="mt-2 text-gray-300 leading-relaxed">Envio a versão final para sua aprovação. Após qualquer ajuste fino necessário, o projeto é exportado nos melhores formatos para a plataforma onde será usado (Instagram, YouTube, etc.) e entregue a você.</p>
+                    </div>
+                </div>
+
+                <div class="text-center mt-20" data-aos="fade-up">
+                    <a href="index.html#contato" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-8 rounded-lg transition-colors text-lg">
+                        Vamos começar seu projeto?
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-[#100425] border-t border-gray-800 py-6">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-center md:text-left">
+                
+                <div class="text-gray-400 mb-4 md:mb-0">
+                    &copy; <span id="current-year"></span> Rodrigo S. R. Todos os direitos reservados.
+                </div>
+
+                <div class="flex space-x-6">
+                    <a href="https://github.com/WolfAllone" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-purple-400 transition-colors" aria-label="GitHub">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" clip-rule="evenodd" /></svg>
+                    </a>
+                    <a href="https://linkedin.com/in/rodrigo-silva-ramos-982693369/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-purple-400 transition-colors" aria-label="LinkedIn">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>    
+                    </a>
+                    <a href="mailto:rodrigosramos21@gmail.com" class="text-gray-400 hover:text-purple-400 transition-colors" aria-label="E-mail">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+                    </a>
+                </div>
+            </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

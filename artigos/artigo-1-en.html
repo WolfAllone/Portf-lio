@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="bg-[#0B021D] text-white">
+<head>
+    <title>Scripts Práticos em Python para Editores de Vídeo</title>
+    <meta name="description" content="Como a lógica e a organização de um desenvolvedor podem transformar o fluxo de trabalho no audiovisual.">
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../imgs/favicon.ico">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/toolbar/prism-toolbar.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-[#0B021D] sticky top-0 z-50 shadow-md backdrop-blur-sm bg-opacity-70">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            
+            <a href="../index-en.html" class="text-2xl font-bold text-white tracking-wider">R.S</a>
+
+            <div class="hidden md:flex items-center">
+                <nav class="hidden md:flex space-x-8">
+                    <a href="../index-en.html#sobre" class="text-gray-300 hover:text-purple-400 transition-colors">About</a>
+                    <a href="../index-en.html#projetos" class="text-gray-300 hover:text-purple-400 transition-colors">Projects</a>
+                    <a href="../videografia-en.html" class="text-gray-300 hover:text-purple-400 transition-colors">Videography</a>
+                    <a href="../processo-en.html" class="text-gray-300 hover:text-purple-400 transition-colors">Process</a>
+                    <a href="../index-en.html#contato" class="text-gray-300 hover:text-purple-400 transition-colors">Contact</a>
+                    <a href="../blog-en.html" class="text-gray-300 hover:text-purple-400 transition-colors">Blog</a>
+                </nav>
+
+                <button id="theme-toggle-button" class="ml-6 text-gray-300 hover:text-purple-400 transition-colors pl-8 border-l border-gray-700">
+                    <svg id="theme-icon-sun" class="w-6 h-6 hidden" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm-.707 7.072l.707-.707a1 1 0 10-1.414-1.414l-.707.707a1 1 0 001.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 100 2h1z" clip-rule="evenodd"></path></svg>
+                    <svg id="theme-icon-moon" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                </button>
+
+                <div id="language-switcher" class="relative ml-2 flex items-center bg-gray-800 bg-opacity-50 p-1 rounded-full">
+                    <div id="language-pill" class="absolute h-full bg-purple-600 rounded-full transition-all duration-300 ease-in-out"></div>
+
+                    <a href="artigo-1.html" class="lang-link px-3 py-1 text-sm font-medium transition-transform duration-200 hover:scale-110 relative z-10" data-lang="pt">PT</a>
+                    <a href="artigo-1-en.html" class="lang-link px-3 py-1 text-sm font-medium transition-transform duration-200 hover:scale-110 relative z-10" data-lang="en">EN</a>
+                </div>
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg id="icon-hamburger" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-[#100425]">
+            <a href="../index-en.html#sobre" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">About</a>
+            <a href="../index-en.html#projetos" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Projects</a>
+            <a href="../videografia-en.html" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Videography</a>
+            <a href="../processo-en.html" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Process</a>
+            <a href="../index-en.html#contato" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Contact</a>
+            <a href="../blog-en.html" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Blog</a>
+        </div>
+    </header>
+    <main>
+        <div class="container mx-auto px-6 py-16 md:py-24 max-w-3xl">
+            <article class="prose prose-invert max-w-none prose-p:text-gray-300 prose-headings:text-white prose-a:text-purple-400 prose-strong:text-white">
+                
+                <h1>Practical Python Scripts for Video Editors</h1>
+                
+                <p class="text-sm text-gray-400">Published on June 29, 2025 • 5 min read</p>
+
+                <img src="../imgs/thumbnailScriptPy-en.png" alt="Article cover image" class="rounded-lg shadow-lg">
+                
+                <p>
+                    How many hours have you lost on repetitive tasks? Renaming dozens of video files one by one, converting clips to the correct format, organizing folders... These are essential processes, but they consume precious time that could be spent on the creative part of editing.
+                    <br><br>
+                    Coming from the world of software development, I learned a valuable lesson: if a task is manual and repetitive, it is a perfect candidate for automation. Today, I apply this mindset to my audiovisual work.
+                    <br><br>
+                    In this article, I will show two practical examples of how I use simple Python scripts to automate common tasks, freeing up more time to focus on what really matters: telling good stories.
+                </p>
+
+                <h2>1. Batch Renaming Files</h2>
+                <p>
+                    Imagine you've just received the footage from a day's shoot. You have 50 files with generic names like <code>C0001.MOV</code>, <code>C0002.MOV</code>, <code>C0003.MOV</code>. Before you start editing, it's ideal to rename them to an organized standard, like <code>ProjectSummer_Scene05_Take01.MOV</code>.
+                </p>
+
+                <pre><code class="language-python">
+import os
+
+# 1. Define the folder where your files are and the new base name
+video_folder = '/path/to/your/raw/footage/folder'
+project_base_name = 'ProjectSummer_Scene05'
+
+# 2. List all files in the folder
+files = os.listdir(video_folder)
+files.sort() # Ensures the files are in order
+
+counter = 1
+for file in files:
+    # Gets the file extension (e.g., .MOV)
+    old_name, extension = os.path.splitext(file)
+    
+    # Assembles the new filename, with a counter
+    new_name = f"{project_base_name}_Take{counter:02d}{extension}"
+    
+    # Full path of the old and new file
+    old_path = os.path.join(video_folder, file)
+    new_path = os.path.join(video_folder, new_name)
+    
+    # Renames the file
+    os.rename(old_path, new_path)
+    
+    print(f'Renamed: {file} -> {new_name}')
+    counter += 1
+
+print("Process finished!")
+</code></pre>
+
+                <p>
+                    The script uses Python's <code>os</code> library to interact with the file system. It lists all the files in the folder, and then, one by one <code>(for file in files)</code>, it assembles the new name and uses the <code>os.rename()</code> function to work its magic.
+                </p>
+
+                <h2>2. Converting Video Formats</h2>
+                <p>Another common task is format conversion. Perhaps you've received files in <code>.MOV</code> that are very large, and you need to convert them to <code>.MP4</code> for smoother editing or for web publishing.</p>
+
+                <p>For this task, we use the industry standard for video manipulation: FFmpeg. FFmpeg is a command-line program, and our Python script will automate the process of calling it for each of our videos.</p>
+
+                <p>To use this script, you need FFmpeg installed on your computer and the Python library, which can be installed with a simple command in your terminal: <code>pip install ffmpeg-python</code></p>
+
+                <pre><code class="language-python">
+import os
+import ffmpeg
+
+# Folder where the videos to be converted are located
+video_folder = '/path/to/your/folder'
+
+# Loop to find all .MOV files in the folder
+for file in os.listdir(video_folder):
+    if file.endswith('.MOV'):
+        # Full path of the input file
+        input_path = os.path.join(video_folder, file)
+        
+        # Creates the output filename by changing the extension to .mp4
+        output_name = os.path.splitext(file)[0] + '.mp4'
+        output_path = os.path.join(video_folder, output_name)
+        
+        print(f'Converting {file} to {output_name}...')
+        
+        try:
+            # Uses the ffmpeg library to create the conversion command
+            ffmpeg.input(input_path).output(output_path, vcodec='libx264').run()
+            print(f'Conversion of {file} complete!')
+        except ffmpeg.Error as e:
+            print('An error occurred:', e.stderr)
+
+print("Conversion process finished!")
+</code></pre>
+
+                <p>This script searches for all files that end with <code>.MOV</code>. For each one, it uses the ffmpeg library to create and execute the conversion command to the <code>.MP4</code> format with the <code>libx264 codec</code>, which is great for the web.</p>
+                
+                <h2>Conclusion</h2>
+
+                <p>
+                    As we've seen, with just a few lines of code, we can transform hours of tedious manual work into a process of a few seconds.
+                    <br><br>
+                    The true beauty of this isn't just the automation itself, but the change in mindset. It's about seeing bottlenecks in the workflow and using logic to create efficient solutions, freeing up our most precious asset: time for creativity.
+                </p>
+            </article>
+        </div>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/articles.js"></script>
+    <script src="../js/projects.js"></script>
+    <script src="../js/script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

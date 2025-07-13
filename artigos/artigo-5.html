@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="bg-[#0B021D] text-white">
+<head>
+    <title>O Guia Básico de Correção de Cor para Iniciantes</title>
+    <meta name="description" content="Como a lógica e a organização de um desenvolvedor podem transformar o fluxo de trabalho no audiovisual.">
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../imgs/favicon.ico">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/toolbar/prism-toolbar.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="lang-pt">
+    <header class="bg-[#0B021D] sticky top-0 z-50 shadow-md backdrop-blur-sm bg-opacity-70">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            
+            <a href="../index.html" class="text-2xl font-bold text-white tracking-wider">R.S</a>
+
+            <div class="hidden md:flex items-center">
+                <nav class="space-x-8">
+                    <a href="../index.html#sobre" class="text-gray-300 hover:text-purple-400 transition-colors">Sobre</a>
+                    <a href="../index.html#projetos" class="text-gray-300 hover:text-purple-400 transition-colors">Projetos</a>
+                    <a href="../videografia.html" class="text-gray-300 hover:text-purple-400 transition-colors">Videografia</a>
+                    <a href="../processo.html" class="text-gray-300 hover:text-purple-400 transition-colors">Processo</a>
+                    <a href="../index.html#contato" class="text-gray-300 hover:text-purple-400 transition-colors">Contato</a>
+                    <a href="../blog.html" class="text-gray-300 hover:text-purple-400 transition-colors">Blog</a>
+                </nav>
+
+                <button id="theme-toggle-button" class="ml-6 text-gray-300 hover:text-purple-400 transition-colors pl-8 border-l border-gray-700">
+                    <svg id="theme-icon-sun" class="w-6 h-6 hidden" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm-.707 7.072l.707-.707a1 1 0 10-1.414-1.414l-.707.707a1 1 0 001.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 100 2h1z" clip-rule="evenodd"></path></svg>
+                    <svg id="theme-icon-moon" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                </button>
+
+                <div id="language-switcher" class="relative ml-2 flex items-center bg-gray-800 bg-opacity-50 p-1 rounded-full">
+                    <div id="language-pill" class="absolute h-full bg-purple-600 rounded-full transition-all duration-300 ease-in-out"></div>
+
+                    <a href="artigo-5.html" class="lang-link px-3 py-1 text-sm font-medium transition-transform duration-200 hover:scale-110 relative z-10" data-lang="pt">PT</a>
+                    <a href="artigo-5-en.html" class="lang-link px-3 py-1 text-sm font-medium transition-transform duration-200 hover:scale-110 relative z-10" data-lang="en">EN</a>
+                </div>
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg id="icon-hamburger" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg id="icon-hamburger" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-[#100425]">
+            <a href="../index.html#sobre" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Sobre</a>
+            <a href="../index.html#projetos" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Projetos</a>
+            <a href="../videografia.html" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Videografia</a>
+            <a href="../processo.html" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Processo</a>
+            <a href="../index.html#contato" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Contato</a>
+            <a href="../blog.html" class="block text-center py-3 text-gray-300 hover:bg-purple-900 transition-colors">Blog</a>
+        </div>
+    </header>
+    <main>
+        <div class="container mx-auto px-6 py-16 md:py-24 max-w-3xl">
+            <article class="prose prose-invert max-w-none prose-p:text-gray-300 prose-headings:text-white prose-a:text-purple-400 prose-strong:text-white">
+                
+                <h1>O Guia Básico de Correção de Cor para Iniciantes</h1>
+                
+                <p class="text-sm text-gray-400">Publicado em 29 de Junho de 2025 • Leitura de 5 min</p>
+
+                <img src="../imgs/correctionColor.png" alt="Capa do artigo" class="rounded-lg shadow-lg w-50 h-30">
+
+                <h2>Problemas Recorrentes</h2>
+                <p> 
+                    Se você já gravou uma cena que parecia ótima ao vivo, mas no computador ficou 'lavada' e sem vida, você não está sozinho. A boa notícia é que resolver isso é mais fácil do que parece. O processo se chama Correção de Cor, e neste guia, vamos desmistificar os pilares para começar a tratar suas imagens: Exposição, Contraste, Saturação e os famosos LUTs.
+                </p>
+
+                <h2>Seção 1: O Ponto de Partida - Correção vs. Gradação</h2>
+                <p>
+
+                    Agora imagine que a correção seria a parte técnica de uma 'faxina' de imagem, isto é, vamos consertar todos os problemas que uma imagem/vídeo podem conter, afinal nenhum vídeo é gravado com perfeição, qualquer tipo de material (Image, vídeo ou audio) devem ser tratados com a maior qualidade possível, alguns dos problemas que vamos resolver seriam: Ajustar um branco que está amarelado, clarear uma cena escura, e garantir que as cores pareçam naturais e equilibradas.
+                </p>
+                <p>
+                    Feito tudo isso, chegamos na parte onde criamos um clima quer seria a: gradação. Parte essa que teria como objetivo, criar uma emoção, estilo visual ou clima como própriamente dito anteriormente, alguns exemplos válidos seriam dos filmes: Matrix, onde possuímos tons verdes, e Blade Runner 2049, onde possuímos cores mais alaranjadas..
+                </p>
+                <p>
+                    Neste guia, vamos focar no primeiro e mais importante passo: uma boa correção.
+                </p>
+                
+                <h2> Seção 2: Os 3 Pilares da Correção</h2>
+
+                <h3>2.1. Exposição (Ajustando a Luminosidade)</h3>
+
+                <p>
+                    <strong> O que é?</strong> É o quão clara ou escura sua imagem está no geral. Uma imagem superexposta está clara demais, 'estourando' os brancos e perdendo detalhes. Uma imagem subexposta está escura demais, escondendo informações nas sombras."
+
+                    <strong>Como ajustar:</strong> No seu software de edição, procure por controles como 'Exposição', 'Brilho' (Brightness) ou 'Gain'.
+
+                    Dica Visual: Coloque uma imagem com 3 versões: Subexposta | Correta | Superexposta.
+                </p>
+
+                <div class="flex gap-4 my-6">
+                    <figure class="flex-1 text-center">
+                        <img src="../tratamento-imgs/subexposição.png" alt="Imagem exemplo de Subexposição" class="rounded-md">
+                        <figcaption class="text-sm mt-2 text-gray-400">Subexposta</figcaption>
+                    </figure>
+                    <figure class="flex-1 text-center">
+                        <img src="../tratamento-imgs/correto.png" alt="Imagem exemplo Correta" class="rounded-md">
+                        <figcaption class="text-sm mt-2 text-gray-400">Correta</figcaption>
+                    </figure>
+                    <figure class="flex-1 text-center">
+                        <img src="../tratamento-imgs/sobreexposição.png" alt="Imagem exemplo de Superexposição" class="rounded-md">
+                        <figcaption class="text-sm mt-2 text-gray-400">Superexposta</figcaption>
+                    </figure>
+                </div>
+
+                <h3>2.2. Contraste (Criando Profundidade)</h3>
+                <p> 
+                    <strong>O que é?</strong> É a diferença entre as áreas mais claras e as mais escuras da imagem. Baixo contraste deixa a imagem 'lavada' e sem profundidade. Alto contraste deixa os brancos mais brilhantes e os pretos mais profundos, criando uma sensação tridimensional.
+
+                    <strong>Como ajustar:</strong> Use o controle de 'Contraste'. Para um ajuste fino, manipule 'Realces' (Highlights) e 'Sombras' (Shadows) separadamente.
+                    Dica Visual: Coloque uma imagem lado a lado: Baixo Contraste vs. Alto Contraste.
+                </p>
+
+                <div class="flex gap-4 my-6">
+                    <figure class="flex-1 text-center">
+                        <img src="../tratamento-imgs/baixoContraste.png" alt="Imagem exemplo de Alto Contraste" class="rounded-md">
+                        <figcaption class="text-sm mt-2 text-gray-400">Baixo Contraste</figcaption>
+                    </figure>
+                    <figure class="flex-1 text-center">
+                        <img src="../tratamento-imgs/altoContraste.png" alt="Imagem exemplo Alto Contraste" class="rounded-md">
+                        <figcaption class="text-sm mt-2 text-gray-400">Alto Contraste</figcaption>
+                    </figure>
+                </div>
+
+                <h3>2.3. Saturação (A Intensidade da Cor)</h3>
+                <p>
+                    <strong>O que é?</strong> É a 'pureza' ou intensidade das cores. Com saturação zero, sua imagem fica em preto e branco. Com saturação alta, as cores ficam super vibrantes, quase neon.
+
+                    <strong>Como ajustar:</strong> Use o controle de 'Saturação'. Cuidado: um erro comum de iniciantes é exagerar e deixar os tons de pele artificiais. Uma alternativa mais segura é o controle de 'Vibração' (Vibrance), que aumenta a intensidade das cores menos saturadas e protege os tons de pele.
+
+                    Dica Visual: Mostre 3 versões da mesma imagem: Dessaturada | Saturação Normal | Supersaturada.
+                </p>
+
+                <div class="flex gap-4 my-6">
+                    <figure class="flex-1 text-center">
+                        <img src="../tratamento-imgs/desaturada.png" alt="Imagem exemplo de Subexposição" class="rounded-md">
+                        <figcaption class="text-sm mt-2 text-gray-400">Dessaturada</figcaption>
+                    </figure>
+                    <figure class="flex-1 text-center">
+                        <img src="../tratamento-imgs/normal.png" alt="Imagem exemplo Correta" class="rounded-md">
+                        <figcaption class="text-sm mt-2 text-gray-400">Saturação Normal</figcaption>
+                    </figure>
+                    <figure class="flex-1 text-center">
+                        <img src="../tratamento-imgs/supersaturada.png" alt="Imagem exemplo Correta" class="rounded-md">
+                        <figcaption class="text-sm mt-2 text-gray-400">Supersaturação</figcaption>
+                    </figure>
+                </div>
+
+                <h2>Seção 3: O "Atalho" Mágico - O que são LUTs?</h2>
+
+                <p>
+                    Pense em um LUT (Look-Up Table) como um filtro do Instagram para vídeos, só que muito mais poderoso e preciso.
+                </p>
+                <p>
+                    Ele seria um arquivo de texto que mapeia cores, basicamente dizendo ao software: Pegue este branco e transforme em um tom mais escuro. Existem LUTs técnicos (para converter formatos de câmera) e LUTs criativos (para aplicar um 'look' de filme, por exemplo).
+                </p>
+                <p>
+                    Na maioria dos softwares, há um efeito chamado 'Aplicar LUT' (ou 'Creative LUT' no Lumetri Color do Premiere), onde você pode carregar o arquivo .cube ou .3dl.
+                </p>
+                <p>
+                    Sempre aplique LUTs criativos depois de fazer a correção básica de exposição e contraste. Um LUT funciona melhor em uma imagem já balanceada.
+                </p>
+
+                <h2>Conclusão</h2>
+                <p>
+                    Dominar estes conceitos é o primeiro passo para ter controle total sobre suas imagens e dar a elas um acabamento profissional. A correção de cor é uma jornada de aprendizado contínuo. Portanto, treine seu olho para observar as cores ao seu redor e, o mais importante, divirta-se no processo de transformar suas imagens e criar emoções através das cores.
+                </p>
+            </article>
+        </div>
+    </main>
+
+    <script src="../js/script.js" defer></script>
+    <script src="artigos.js"></script>
+    <script src="../js/projects.js"></script> 
+    <script src="../js/articles.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
